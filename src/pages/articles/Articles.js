@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { formatDate } from 'utils/date';
 
 
-const ArticlesPost = ({
+export default ArticlesPost = ({
 
   date,
 
@@ -14,6 +14,4 @@ const ArticlesPost = ({
   }, [date, dateTime]);
 
 };
-
-export default ArticlesPost;
 

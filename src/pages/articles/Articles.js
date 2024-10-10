@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { formatDate } from 'utils/date';
 
-export function ArticlesPost({ date }) {
+export const ArticlesPost = ({ date }) => {
   const [dateTime, setDateTime] = useState(null);
 
   useEffect(() => {

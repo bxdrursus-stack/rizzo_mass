@@ -13,4 +13,4 @@ export const ArticlesPost = ({ date }) => {
       <p>{dateTime}</p>
     </div>
   );
-}
+};

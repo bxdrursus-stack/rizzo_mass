@@ -1,17 +1,18 @@
 import { useState, useEffect } from 'react';
 import { formatDate } from 'utils/date';
 
+const ArticlesPost = ({ date }) => {
+    const [dateTime, setDateTime] = useState(null);
 
-export default ArticlesPost = ({
+    useEffect(() => {
+        setDateTime(formatDate(date));
+    }, [date]);
 
-  date,
-
-}) => {
-  const [dateTime, setDateTime] = useState(null);
-
-  useEffect(() => {
-    setDateTime(formatDate(date));
-  }, [date, dateTime]);
-
+    return (
+        <div>
+            <p>{dateTime}</p>
+        </div>
+    );
 };
 
+export default ArticlesPost;

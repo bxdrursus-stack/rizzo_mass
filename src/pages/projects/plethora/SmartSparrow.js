@@ -10,7 +10,6 @@ import imageSprLessonBuilderDark from 'assets/pleth.png';
 import imageSprLessonBuilderLightLarge from 'assets/spr-lesson-builder-light-large.jpg';
 import imageSprLessonBuilderLightPlaceholder from 'assets/spr-lesson-builder-light-placeholder.jpg';
 import imageSprLessonBuilderLight from 'assets/spr-lesson-builder-light.jpg';
-;
 import { Footer } from 'components/Footer';
 import { Meta } from 'components/Meta';
 import {  useTheme } from 'components/ThemeProvider';

@@ -3,6 +3,7 @@ import backgroundSprPlaceholder from 'assets/spr-background-placeholder.jpg';
 
 import backgroundSpr from 'assets/bg.png';
 
+import { useTheme } from 'components/ThemeProvider';
 
 
 import imageSprLessonBuilderDarkLarge from 'assets/astravoice.png';

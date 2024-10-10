@@ -1,15 +1,22 @@
-import gamestackTexture2Large from 'assets/gamestack-list-large.jpg';
-import gamestackTexture2Placeholder from 'assets/gamestack-list-placeholder.jpg';
-import gamestackTexture2 from 'assets/gamestack-list.jpg';
-import gamestackTextureLarge from 'assets/gamestack-login-large.jpg';
-import gamestackTexturePlaceholder from 'assets/gamestack-login-placeholder.jpg';
-import gamestackTexture from 'assets/gamestack-login.jpg';
-import sliceTextureLarge from 'assets/slice-app-large.jpg';
+import gamestackTexture2Large from 'assets/plethora.png';
+import gamestackTexture2Placeholder from 'assets/plethora.png';
+
+
+import gamestackTexture2 from 'assets/plethora.png';
+import gamestackTextureLarge from 'assets/plethora.png';
+
+
+import gamestackTexturePlaceholder from 'assets/placeholder.png';
+import gamestackTexture from 'assets/placeholder.png';
+
+
+
+import sliceTextureLarge from 'assets/image.png';
 import sliceTexturePlaceholder from 'assets/slice-app-placeholder.jpg';
-import sliceTexture from 'assets/slice-app.jpg';
+import sliceTexture from 'assets/image.png';
 import sprTextureLarge from 'assets/spr-lesson-builder-dark-large.jpg';
 import sprTexturePlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jpg';
-import sprTexture from 'assets/spr-lesson-builder-dark.jpg';
+import sprTexture from 'assets/astra.png';
 import { Footer } from 'components/Footer';
 import { Meta } from 'components/Meta';
 import { Intro } from 'layouts/Home/Intro';
@@ -19,7 +26,7 @@ import { useEffect, useRef, useState } from 'react';
 import styles from './Home.module.css';
 import { Helmet } from 'react-helmet';
 
-const disciplines = ['Developer', 'Photographer', 'Helper'];
+const disciplines = ['Entrepreneur', 'Producer', 'Artist'];
 
 
 
@@ -75,9 +82,8 @@ export const Home = () => {
       <script defer src="https://analytics.tomasps.com/script.js" data-hash></script>
     </Helmet>
       <Meta
-        title="Designer + Developer"
-        description="Design portfolio of TomasPS — a product designer working on web & mobile
-          apps with a focus on motion, experience design, and accessibility."
+        title="Developer + Producer"
+        description="Welcome to Rami Badr's Portfolio."
       />
       <Intro
         id="intro"
@@ -90,10 +96,10 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Tesla-Dashboard"
-        description="Tesla dashboard for beamng drive"
-        buttonText="View more"
-        buttonLink="/projects/tesla-dashboard"
+        title="Astra Voice"
+        description="Building the future of customer support & it speaks your language."
+        buttonText="Learn More"
+        buttonLink="/projects/astra-voice"
         model={{
           type: 'laptop',
           alt: 'Screenshot of the current UI',
@@ -111,10 +117,11 @@ export const Home = () => {
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="SpainRP"
-        description="SpainRP Minecraft Server"
-        buttonText="View website"
-        buttonLink="https://spainrp.me"
+        title="Plethora"
+        description="Turn audio & videos into notes,
+flashcards, quizzes, conversations and more."
+        buttonText="Learn More"
+        buttonLink="/projects/plethora"
         model={{
           type: 'phone',
           alt: 'App login screen',
@@ -135,10 +142,10 @@ export const Home = () => {
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
         index={3}
-        title="Vectorify"
-        description="A vector drawing app made with C# and WinUI3"
+        title="Futuro"
+        description="A private community of driven & aspiring teen entrepeneurs."
         buttonText="View website"
-        buttonLink="https://github.com/tresillo2017/vectorify"
+        buttonLink="https://getfuturo.com/"
         model={{
           type: 'laptop',
           alt: 'A screenshot of the current UI',

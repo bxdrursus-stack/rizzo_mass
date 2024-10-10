@@ -1,11 +1,7 @@
 import profileKatakana from 'assets/katakana-profile.svg?url';
-
-
-import profileImgLarge from 'assets/badr.jpg';
-import profileImgPlaceholder from 'assets/badr.jpg';
-import profileImg from 'assets/badr.jpg';
-
-
+import profileImgLarge from 'assets/profile-large.jpg';
+import profileImgPlaceholder from 'assets/profile-placeholder.jpg';
+import profileImg from 'assets/profile.jpg';
 import { Button } from 'components/Button';
 import { DecoderText } from 'components/DecoderText';
 import { Divider } from 'components/Divider';
@@ -22,17 +18,18 @@ import styles from './Profile.module.css';
 const ProfileText = ({ visible, titleId }) => (
   <Fragment>
     <Heading className={styles.title} data-visible={visible} level={3} id={titleId}>
-      <DecoderText text="Who ?" start={visible} delay={500} />
+      <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I’m Badr, an ambitious teen driven by hard work and consistency. My most recent project, {' '}
-      <Link href="https://plethora.lol/">Plethora</Link>, aims to facilitate common pain points as seen in the education sphere.
+      I’m Tomas, currently I live in Spain currently working in{' '}
+      <Link href="https://spainrp.me">SpainRP</Link>. My projects include UX design, UI
+      animations, and icon illustration. Being comfortable with code allows me to rapidly
+      prototype and validate experiences. If you’re interested in the tools and software I
+      use check out my <Link href="/uses">uses page</Link>.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      In my spare time, I play sports, such as soccer, swimming & volleyball. I also workout & make music from time to time.{' '}
-    </Text>
-    <Text className={styles.description} data-visible={visible} size="l" as="p">
-      If you have any collaboration, partnership or any kind of inquiries, then you can contact me below.{' '}
+      In my spare time I like to take photos to things I see and like{' '}
+      <Link href="https://photography.tomasps.com">Website</Link>.
     </Text>
   </Fragment>
 );
@@ -61,7 +58,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                 secondary
                 className={styles.button}
                 data-visible={visible}
-                href="mailto:business@badr.lol"
+                href="/contact"
                 icon="send"
               >
                 Send me a message
@@ -86,6 +83,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                   placeholder={profileImgPlaceholder}
                   srcSet={[profileImg, profileImgLarge]}
                   sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
+                  alt="Me standing in the sky"
                 />
                 <svg
                   aria-hidden="true"

@@ -4,36 +4,30 @@ export const navLinks = [
     pathname: '/#project-1',
   },
   {
-    label: 'Details',
+    label: 'Who?',
     pathname: '/#details',
   },
   {
-    label: 'Articles',
-    pathname: '/articles',
+    label: 'Contact',
+    pathname: 'mailto:business@badr.lol',
   },
   // {
   //   label: 'Contact',
   //   pathname: '/contact',
   // },
-  {
-    label: 'Photography',
-    pathname: 'https://photography.tomasps.com',
-  },
-  {
-    label: 'Drive',
-    pathname: 'https://drive.tomasps.com',
-  },
+ 
+ 
 ];
 
 export const socialLinks = [
   {
-    label: 'Twitter',
-    url: 'https://twitter.com/toomas_ps',
-    icon: 'twitter',
+    label: 'LinkedIn',
+    url: 'https://fr.linkedin.com/in/rami-badr-27143a305',
+    icon: 'linkedin',
   },
   {
     label: 'Github',
-    url: 'https://github.com/Tresillo2017',
+    url: 'https://github.com/bxdr-glitch',
     icon: 'github',
   },
 ];

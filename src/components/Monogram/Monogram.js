@@ -1,12 +1,7 @@
-import { forwardRef, useId } from 'react';
-import { classes } from 'utils/style';
-import styles from './Monogram.module.css';
-import one from '../../../public/1.ico'
-import Image from 'next/image';
+import { forwardRef } from 'react';
 
-export const Monogram = forwardRef(({ highlight, className, ...props }, ref) => {
-  const id = useId();
-  const clipId = `${id}monogram-clip`;
+
+export const Monogram = forwardRef(() => {
 
   return (
 

@@ -81,6 +81,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
               </div>
               <div className={styles.image}>
                 <Image
+                alt="Rami Badr"
                   reveal
                   delay={100}
                   placeholder={profileImgPlaceholder}

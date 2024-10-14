@@ -5,11 +5,10 @@ import { Head, Html, Main, NextScript } from 'next/document';
 
 export default function Document() {
   return (
-    <Html lang="en">
+    <div>
       <Head>
         <meta charSet="utf-8" />
 
-        <link rel="manifest" href="/manifest.json" />
         <link rel="shortcut icon" href="/favicon.png" type="image/png" />
         <link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/icon-256.png" />
@@ -33,6 +32,6 @@ export default function Document() {
         <NextScript />
         <div id="portal-root" />
       </body>
-    </Html>
+      </div>
   );
 }

@@ -5,33 +5,33 @@ import { Head, Html, Main, NextScript } from 'next/document';
 
 export default function Document() {
   return (
-    <div>
-      <Head>
-        <meta charSet="utf-8" />
+    <Html lang="en">
+    <Head>
+      <meta charSet="utf-8" />
 
-        <link rel="shortcut icon" href="/favicon.png" type="image/png" />
-        <link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/icon-256.png" />
-        <link type="text/plain" rel="author" href="/humans.txt" />
+      <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+      <link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml" />
+      <link rel="apple-touch-icon" href="/icon-256.png" />
+      <link type="text/plain" rel="author" href="/humans.txt" />
 
-        <link rel="preload" href={GothamMedium} as="font" crossOrigin="true" />
-        <link rel="preload" href={GothamBook} as="font" crossOrigin="true" />
-        <style dangerouslySetInnerHTML={{ __html: fontStyles }} />
-        <style dangerouslySetInnerHTML={{ __html: tokenStyles }} />
-      </Head>
-      <body data-theme="dark" tabIndex={-1}>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              const initialTheme = JSON.parse(localStorage.getItem('theme'));
-              document.body.dataset.theme = initialTheme || 'dark';
-            `,
-          }}
-        />
-        <Main />
-        <NextScript />
-        <div id="portal-root" />
-      </body>
-      </div>
+      <link rel="preload" href={GothamMedium} as="font" crossOrigin="true" />
+      <link rel="preload" href={GothamBook} as="font" crossOrigin="true" />
+      <style dangerouslySetInnerHTML={{ __html: fontStyles }} />
+      <style dangerouslySetInnerHTML={{ __html: tokenStyles }} />
+    </Head>
+    <body data-theme="dark" tabIndex={-1}>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            const initialTheme = JSON.parse(localStorage.getItem('theme'));
+            document.body.dataset.theme = initialTheme || 'dark';
+          `,
+        }}
+      />
+      <Main />
+      <NextScript />
+      <div id="portal-root" />
+    </body>
+  </Html>
   );
 }
